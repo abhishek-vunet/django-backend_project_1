@@ -136,23 +136,23 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#       'default':{
-#             'ENGINE': 'django.db.backends.mysql',
-#             'NAME': 'sample',
-#             'HOST':'127.0.0.1',
-#             'PORT':'3306',
-#             'USER':'root',
-#             'PASSWORD':'Vunetsystems@123!'
-        
-#       }
-# }
-import dj_database_url
-
-
 DATABASES = {
-	"default": dj_database_url.parse("postgresql://sample_pc21_user:hjXbr6H8Wl8ruLlgQ5z9aCbOvfbXpFPb@dpg-cqd6jrpu0jms73e9v680-a.oregon-postgres.render.com/sample_pc21")
+      'default':{
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'sample',
+            'HOST':'127.0.0.1',
+            'PORT':'3306',
+            'USER':'root',
+            'PASSWORD':'Vunetsystems@123!'
+        
+      }
 }
+# import dj_database_url
+
+
+# DATABASES = {
+# 	"default": dj_database_url.parse("postgresql://sample_pc21_user:hjXbr6H8Wl8ruLlgQ5z9aCbOvfbXpFPb@dpg-cqd6jrpu0jms73e9v680-a.oregon-postgres.render.com/sample_pc21")
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
